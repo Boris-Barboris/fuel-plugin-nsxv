@@ -18,21 +18,45 @@ mod 'inifile',
     :ref => '1.4.2'
 
 # Pull in puppet-neutron
-mod 'neutron',
+mod 'openstack-neutron',
     :git => 'https://github.com/fuel-infra/puppet-neutron.git',
     :ref => 'stable/mitaka'
 
 # Pull in puppet-nova
-mod 'nova',
+mod 'openstack-nova',
     :git => 'https://github.com/fuel-infra/puppet-nova.git',
     :ref => 'stable/mitaka'
 
 # Pull in puppet-openstacklib
-mod 'openstacklib',
+mod 'openstack-openstacklib',
     :git => 'https://github.com/fuel-infra/puppet-openstacklib.git',
     :ref => 'stable/mitaka'
 
 # Pull in puppet-keystone
-mod 'keystone',
+mod 'openstack-keystone',
     :git => 'https://github.com/fuel-infra/puppet-keystone.git',
     :ref => 'stable/mitaka'
+
+mod 'openstack-vswitch',
+    :git => 'https://github.com/openstack/puppet-vswitch.git',
+    :ref => 'mitaka-eol'
+
+mod 'openstack-cinder',
+    :git => 'https://github.com/openstack/puppet-cinder.git',
+    :ref => 'mitaka-eol'
+
+mod 'openstack-glance',
+    :git => 'https://github.com/openstack/puppet-glance.git',
+    :ref => 'mitaka-eol'
+
+mod 'puppetlabs-concat',
+    :git => 'https://github.com/puppetlabs/puppetlabs-concat.git',
+    :ref => '2.2.1'
+
+mod 'puppet-staging',
+    :git => 'https://github.com/voxpupuli/puppet-staging.git',
+    :ref => 'dbea7c12454166fd316040930dc6401ec9f377d6'
+
+mod 'puppetlabs-apt',
+    :git => 'https://github.com/puppetlabs/puppetlabs-apt.git',
+    :ref => '2.2.1'
